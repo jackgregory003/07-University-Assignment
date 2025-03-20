@@ -3,15 +3,20 @@ body {
     display: block;
 }
 
-#top a #navLinks > a{
+#navLinks > a{
+    display: none;
+}
+
+#top > a {
     display: none;
 }
 
 nav {
     height: auto;
-    border-bottom: 2px solid $greyColor;
+    border-bottom: 2px  $greyColor;
     ul {
         display: flex;
+        justify-content: space-evenly;
     }
     li a {
         border: none;
