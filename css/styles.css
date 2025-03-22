@@ -335,7 +335,7 @@ header {
 header span {
   font-size: 1.6rem;
   font-weight: 300;
-  color: #1d295f;
+  color: #121f42;
 }
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
@@ -370,21 +370,21 @@ nav ul {
 }
 nav li a {
   display: block;
-  color: #1d295f;
+  color: #121f42;
   padding: 0.9rem 2vw;
   text-decoration: none;
   text-align: right;
   border-bottom: 3px solid #ccc;
 }
 nav li.active a {
-  color: #7c1d47;
+  color: #56411A;
 }
 
 /* --------------------------- MAIN --------------------------- */
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
   font-size: 1.5rem;
-  color: #7c1d47;
+  color: #56411A;
   font-weight: 300;
 }
 main p {
@@ -399,20 +399,22 @@ form.my-form {
 form.my-form label {
   display: block;
   font-size: 0.8rem;
-  color: rgb(255, 0, 0);
+  color: #121f42;
   padding-top: 0.2rem;
+  font-family: "Spline Sans", sans-serif;
 }
 form.my-form h3 {
   font-size: 0.9rem;
-  color: green;
+  color: #121f42;
   margin: 1.5rem 0 0.2rem 0;
   border-bottom: 1px solid #eee;
 }
-form.my-form input [type=text],
-form.my-form input [type=tel],
-form.my-form input [type=number],
-form.my-form input [type=email],
-form.my-form input [type=password],
+form.my-form input[type=text],
+form.my-form input[type=tel],
+form.my-form input[type=number],
+form.my-form input[type=email],
+form.my-form input[type=password],
+form.my-form input[type=date],
 form.my-form select {
   display: block;
   margin: 0.1rem 0 1rem 0;
@@ -421,7 +423,7 @@ form.my-form select {
   border-bottom-width: 5px;
   border-bottom-color: #555;
   font-size: 1rem;
-  color: green;
+  color: black;
   width: 250px;
   padding: 0.5rem 10px;
 }
@@ -436,7 +438,7 @@ form.my-form input:required:valid {
 }
 form.my-form input[type=submit] {
   border: none;
-  background-color: pink;
+  background-color: #121f42;
   color: white;
   border-radius: 1rem;
   padding: 0.75rem 1.5rem;
@@ -445,10 +447,19 @@ form.my-form input[type=submit] {
   font-size: 1.2rem;
   appearance: none;
 }
+form.my-form input {
+  display: block;
+}
+form.my-form input[type=radio], form.my-form input[type=checkbox] {
+  display: inline;
+}
+form.my-form #pword, form.my-form #uname {
+  margin-top: 1rem;
+}
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-  background-color: #1d295f;
+  background-color: #121f42;
 }
 
 footer {

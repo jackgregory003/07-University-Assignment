@@ -43,37 +43,49 @@
 
         <h1>Registration</h1>
 
+        
         <form method="get" action="thanks.html" autocomplete="on" class="my-form">
             <label>First Name:<input type="text" name="fname" autocomplete="given-name" required title="First Name"></label><br>
             <label>Last Name:<input type="text" name="lname" autocomplete="family-name" required title="First Name"></label><br>
             <label>Email:<input type="email" name="email" autocomplete="email" required title="Your Email Here"></label><br>
             <label>Phone Number<input type="tel" name="phone" autocomplete="tel" required title="Phone Number Here"></label><br>
 
-            <h3>Your Trade</h3>
+            <h3>Your Address</h3>
+            <label>Address<input type="text" name="address" autocomplete="address-level1" required title="Address"></label><br>
+            <label>Zipcode<input type="text" name="zip" autocomplete="address-level2" required title="Zip"></label><br>
+            <label>City<input type="text" name="city" autocomplete="address-level3" required title="City"></label><br>
+            <label>State<input type="text" name="state" autocomplete="address-level4" required title="State"></label><br>
+
+            <h3>Previous Education</h3>
             <label>
                 <select name="condition">
                     <option>Please Select</option>
-                    <option value="fair">Fair Condition</option>
-                    <option value="WY">Wyoming</option>
+                    <option value="high-school">High School</option>
+                    <option value="community-college">Community College</option>
                 </select>
             </label>
             
-            <h3>Interested In</h3>
-            <label><input type="checkbox" name="Want a Truck"> Truck </label>
-            <label><input type="checkbox" name="Want a Sedan"> Sedan </label>
-            <label><input type="checkbox" name="Want an Electric"> Electric </label>
+            <h3>Date of Graduation</h3>
+            <label>
+                <input type="date"id="start" name="graduation-date" value="0000-00-00" min="2018-01-01" max="2025-12-31" />
+            </label>
+
+            <h3>Education Completed</h3>
+            <label><input type="checkbox" name="GED"> GED </label>
+            <label><input type="checkbox" name="High School Diploma"> High School Diploma </label>
+            <label><input type="checkbox" name="Undergraduate"> Undergraduate </label>
             
-            <h3>What can we help you find?</h3>
-            <label><input type="radio" name="vehicle" value="new"> New</label>
-            <label><input type="radio" name="vehicle" value="used"> Used</label>
-            <label><input type="radio" name="vehicle" value="certified"> Certified Used</label>
+            <h3>How can we contact you?</h3>
+            <label><input type="radio" name="mail" value="mail">E-Mail</label>
+            <label><input type="radio" name="texting" value="texting">Text</label>
+            <label><input type="radio" name="pigeon" value="pigeon">Carrier Pigeon</label>
             
-            <label>Username (6 or more letters or numbers)<input type="text" required minlength="6" title="Please enter a username over 6 chracters long"></label>
+            <label id="uname">Username (6 or more letters or numbers)<input type="text" required minlength="6" title="Please enter a username over 6 chracters long"></label>
 
-            <label>Password  (6 or more letters or numbers)<input type="password" required pattern="[A-Za-z0-9]{5,9}"></label>
+            <label id="pword">Password  (6 or more letters or numbers)<input type="password" required pattern="[A-Za-z0-9]{5,9}"></label>
 
 
-            <input type="submit" value="Buy a Car">
+            <input type="submit" value="Register for School">
         </form>
 
     </main>
